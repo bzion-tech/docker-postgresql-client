@@ -7,7 +7,7 @@ This client is compatible with the official postgresql image, which means that i
 ### Start a postgres database
 
 ```
-docker run -e POSTGRES_USER=user -e POSTGRES_PASSWORD=pwd -d --name=pg_container postgres:9.5
+docker run -e POSTGRES_USER=user -e POSTGRES_PASSWORD=pwd -d --name=pg_container postgres:11
 ```
 
 ### Use psql or pg_dump command
