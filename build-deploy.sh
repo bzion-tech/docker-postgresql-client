@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=bzion/postgresql-client:12
+TAG=bzion/postgresql-client:13
 
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
