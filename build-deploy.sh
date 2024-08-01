@@ -2,8 +2,6 @@
 
 TAG=bzion/postgresql-client:16
 
-export DOCKER_DEFAULT_PLATFORM=linux/amd64
+docker buildx create --use --name multi-arch-builder
 
-docker build -t $TAG .
-
-docker push $TAG
+docker buildx build --platform "linux/amd64,linux/arm64,linux/arm/v7" -t $TAG --push .
