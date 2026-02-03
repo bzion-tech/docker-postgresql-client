@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=bzion/postgresql-client:17
+TAG=bzion/postgresql-client:18
 
 docker buildx create --use --name multi-arch-builder
 
